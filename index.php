@@ -92,7 +92,6 @@
     <?php } ?>
   </section>
 
-
   <?php include 'partials/info_section.php'; ?>
 
   <?php include 'partials/footer.php'; ?>
