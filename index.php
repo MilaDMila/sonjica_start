@@ -60,13 +60,17 @@
       </div>
     </div>
     <?php foreach ($rezultat as $proizvod) { ?>
-    <div class="container">
-     
+      <div class="container">
         <div class="kuhinja_container">
           <div class="box">
-
-           <div class="img-box">
-              <!-- <img src="images/bozicna_pogaca.jpg" alt=""> -->
+            <div class="img-box">
+              <?php
+              if ($proizvod['slika']) {
+              echo '<img src="images/' . $proizvod['slika'] . '" alt="Image">';
+              } else {
+                echo  '<p>Nema slike</p>';
+              }
+              ?>
             </div>
             <div class="detail-box">
               <h6>
@@ -83,11 +87,9 @@
               </a>
             </div>
           </div>
-
         </div>
-
-    </div>
-  <?php } ?>
+      </div>
+    <?php } ?>
   </section>
 
 
