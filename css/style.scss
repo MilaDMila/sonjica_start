@@ -196,7 +196,7 @@ a:focus {
   transition: all 0.3s;
 
   span {
-    display: block;
+    // display: block;
     width: 35px;
     height: 4px;
     background-color: $primary1;
@@ -418,16 +418,16 @@ a:focus {
 
 // end about section
 
-// chocolate section
+// kuhinja section
 
-.chocolate_section {
+.kuhinja_section {
   .heading_container {
     align-items: center;
     text-align: center;
     margin-bottom: 25px;
   }
 
-  .chocolate_container {
+  .kuhinja_container {
     padding-bottom: 75px;
   }
 
@@ -461,8 +461,11 @@ a:focus {
       padding: 15px;
       margin-top: 10px;
       opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s;
+      border-color: transparent;
+    box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: 0.15);
+
+      visibility: visible;
+    opacity: 1;
 
       h6 {
         text-transform: uppercase;
@@ -483,15 +486,15 @@ a:focus {
       }
     }
 
-    &:hover {
-      border-color: transparent;
-      box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: 0.15);
+    // &:hover {
+    //   border-color: transparent;
+    //   box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: 0.15);
 
-      .detail-box {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
+    //   .detail-box {
+    //     visibility: visible;
+    //     opacity: 1;
+    //   }
+    // }
   }
 
   .slick-prev,
@@ -542,7 +545,7 @@ a:focus {
   }
 }
 
-// end chocolate section
+// end kuhinja section
 
 // offer section
 
