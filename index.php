@@ -39,9 +39,6 @@
 <body>
   <?php include 'partials/header.php'; ?>
   <section class="kuhinja_section layout_padding">
-
-
-
     <?php
     require 'konekcija.php';
     $baza = "SELECT * FROM products";
